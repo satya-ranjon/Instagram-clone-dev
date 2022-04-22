@@ -1,0 +1,17 @@
+import React from "react";
+
+export default function StoreBar() {
+  return (
+    <div>
+      <Badge
+        overlap="circular"
+        anchorOrigin={{ vertical: "bottom", horizontal: "right" }}
+        badgeContent={
+          <SmallAvatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
+        }
+      >
+        <Avatar alt="Travis Howard" src="/static/images/avatar/2.jpg" />
+      </Badge>
+    </div>
+  );
+}

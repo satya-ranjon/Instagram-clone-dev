@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* body::-webkit-scrollbar {
+  display: none;
+} */
+.hide_scrollbar::-webkit-scrollbar {
+  display: none;
+  overflow: hidden;
+}
+
+#category {
+  overflow: hidden;
+}

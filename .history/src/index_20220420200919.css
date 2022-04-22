@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .grid___three {
+    @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 lg:gap-4  my-10 font-semibold mx-10  sm:mx-20 lg:mx-32 xl:mx-40;
+  }
+  .grid___two {
+    @apply grid grid-cols-1 sm:grid-cols-2 gap-2 lg:gap-4  my-10 font-semibold mx-10  sm:mx-20 lg:mx-32 xl:mx-40;
+  }
+  .grid___one {
+    @apply bg-red-400 px-4
+     py-2 border-2 border-transparent transition-all duration-500 hover:border-blue-500 focus:bg-gray-500 focus:text-white hover:text-2xl;
+    /* @apply p-8; */
+  }
+}
+
+/* body::-webkit-scrollbar {
+  display: none;
+} */
+.hide_scrollbar::-webkit-scrollbar {
+  display: none;
+  overflow: hidden;
+}
+
+#category {
+  overflow: hidden;
+}

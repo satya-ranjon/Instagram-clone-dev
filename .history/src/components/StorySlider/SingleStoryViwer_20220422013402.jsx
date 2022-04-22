@@ -1,0 +1,15 @@
+import React from "react";
+
+export default function SingleStoryViwer() {
+  return (
+    <div className="border-2 rounded-md p-2 w-96 h-[580px]">
+      <div className="my-40">
+        <img
+          className=""
+          src="https://img.freepik.com/free-photo/bearded-youngman-looks-excited-delighted-gladden-amazed-pointing-with-index-finger-aside_295783-1430.jpg?t=st=1650543640~exp=1650544240~hmac=abbbf450f32148664757a8eed42005737faec2f4a99781149420ec4a4d5c5049&w=996"
+          alt=""
+        />
+      </div>
+    </div>
+  );
+}
