@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .grid___three {
+    @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 lg:gap-4 transition-all duration-300 my-10 font-semibold mx-10  sm:mx-20 lg:mx-32 xl:mx-40;
+  }
+  .grid___two {
+    @apply grid grid-cols-1 sm:grid-cols-2 gap-2 lg:gap-4  my-10 font-semibold mx-10 transition-all duration-300 sm:mx-20 lg:mx-32 xl:mx-40;
+  }
+  .grid___one {
+    @apply grid grid-cols-1  gap-2 lg:gap-4  my-10 font-semibold mx-10 sm:mx-32 md:mx-44 transition-all duration-300 lg:mx-60 xl:mx-60;
+  }
+  .img__three {
+    @apply bg-red-300 w-full h-[18rem] transition-all duration-300 sm:h-[14rem] xl:h-[18rem] 2xl:h-[28rem];
+  }
+  .img__two {
+    @apply bg-red-300 w-full h-[18rem] transition-all duration-300 sm:h-[20rem] lg:h-[24rem] xl:h-[28rem] 2xl:h-[40rem];
+  }
+  .img__one {
+    @apply bg-red-300 w-full h-[18rem] transition-all duration-300 sm:h-[20rem] lg:h-[32rem] xl:h-[40rem] 2xl:h-[52rem];
+  }
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+.hide_scrollbar::-webkit-scrollbar {
+  display: none;
+  overflow: hidden;
+}
+
+#category {
+  overflow: hidden;
+}
+
+.bground {
+  background: radial-gradient(
+    ellipse at 70% 70%,
+    #ee583f 8%,
+    #d92d77 42%,
+    #bd3381 58%
+  );
+}
+
+.khokon::before {
+  content: "";
+  background: red;
+  position: absolute;
+  top: 0;
+  width: 3rem;
+  height: 3rem;
+  left: -10%;
+  border-top: 4px solid black;
+  border-right: 4px solid black;
+  border-bottom-left-radius: 100%;
+}
+.khokon::after {
+  content: "";
+  background: rebeccapurple;
+  position: absolute;
+  top: 0;
+  width: 3rem;
+  height: 3rem;
+  left: -10%;
+  border-top: 4px solid black;
+  border-right: 4px solid black;
+  border-bottom-left-radius: 100%;
+}
